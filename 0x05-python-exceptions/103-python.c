@@ -3,6 +3,7 @@
  * Auth: Type Your Name Here
  */
 
+
 #include <Python.h>
 
 void print_python_list(PyObject *p);
@@ -46,6 +47,7 @@ void print_python_list(PyObject *p)
 	}
 }
 
+
 /**
  * print_python_bytes - Prints basic info about Python byte objects.
  * @p: A PyObject byte object.
@@ -83,13 +85,14 @@ void print_python_bytes(PyObject *p)
 	}
 }
 
+
 /**
  * print_python_float - Prints basic info about Python float objects.
  * @p: A PyObject float object.
  */
 void print_python_float(PyObject *p)
 {
-	char *buffer = NULL;
+	char *buff = NULL;
 
 	PyFloatObject *float_obj = (PyFloatObject *)p;
 
@@ -102,8 +105,8 @@ void print_python_float(PyObject *p)
 		return;
 	}
 
-	buffer = PyOS_double_to_string(float_obj->ob_fval, 'r', 0,
+	buff = PyOS_double_to_string(float_obj->ob_fval, 'r', 0,
 			Py_DTSF_ADD_DOT_0, NULL);
-	printf("  value: %s\n", buffer);
-	PyMem_Free(buffer);
+	printf("  value: %s\n", buff);
+	PyMem_Free(buff);
 }
