@@ -1,6 +1,10 @@
 #!/usr/bin/node
-export default class Square extends require('./4-rectangle.js').default {
+const Rectangle = require('./4-rectangle');
+
+class Square extends Rectangle {
   constructor (size) {
     super(size, size);
   }
-};
+}
+
+module.exports = Square;
