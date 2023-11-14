@@ -19,7 +19,7 @@ fs.writeFileSync(fileC, dataA + dataB, { encoding: 'utf8' });
 
 
 
-const fs = import('fs');
+const fs = require('fs');
 
 const concatFiles = (sourceFilePath1, sourceFilePath2, destinationFilePath) => {
   try {
@@ -27,7 +27,7 @@ const concatFiles = (sourceFilePath1, sourceFilePath2, destinationFilePath) => {
     const fileContent2 = fs.readFileSync(sourceFilePath2, 'utf-8');
     const concatenatedContent = fileContent1 + fileContent2;
     fs.writeFileSync(destinationFilePath, concatenatedContent);
-    console.log('Files concatenated successfully!');
+    //console.log('Files concatenated successfully!');
   } catch (error) {
     console.error('Error concatenating files:', error);
   }
