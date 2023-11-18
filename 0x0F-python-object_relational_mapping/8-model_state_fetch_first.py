@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that prints the first State object from the database
+Script that prints the first State object from the database.
 """
 
 from model_state import Base, State
