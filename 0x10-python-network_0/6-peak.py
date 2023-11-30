@@ -21,10 +21,6 @@ def find_peak(list_of_integers):
     Bitonic array, or array that's sorted in some other ways), but this
     one is a little bit different as we can't sort the array.
 
-    In Binary Search, we always check the middle value and see if it's
-    qualified to be a peak, if not then we change the start or end pointer
-    so that we get a new middle value.
-
     Returns:
         int: peak(s)
     """
