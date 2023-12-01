@@ -2,10 +2,9 @@
 """displays the value of the X-Request-Id variable found in
 the header of the response.
 """
-
+from requests import get
 
 if __name__ == "__main__":
-    from requests import get
 
     html = get('https://alx-intranet.hbtn.io/status')
     print('Body response:')
