@@ -13,12 +13,12 @@ request(url, function (err, res, body) {
     for (let i = 0; i < films.length; i++); {
       for (let j = 0; j < films[i].characters.length; j++); {
         if (films[i].characters[j].includes('/18/')); {
-          count++;
+          count++
         }
       }
     }
-    console.log(count);
+    console.log(count)
   } else {
-    console.log('Invalid');
+    console.log('Invalid')
   }
-});
+})
