@@ -3,10 +3,10 @@
 
 const fls = require('fs');
 const argv = process.argv;
-let file_Path = argv[2];
-let string = argv[3];
+const filePath = argv[2];
+const string = argv[3];
 
-fls.writeFile(file_Path, string, 'utf8', function (err) {
+fls.writeFile(filePath, string, 'utf8', function (err) {
   if (err) {
     console.log(err);
   }
